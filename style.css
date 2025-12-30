@@ -1,0 +1,145 @@
+:root {
+    --teal: #2D6A6A;
+    --orange: #F37021;
+    --navy: #19486A;
+    --light-gray: #E8E8E8;
+}
+
+.container { width: 85%; margin: auto; padding: 60px 0; }
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: var(--light-gray);
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('headcover.img.jpg') center/cover;
+    padding: 2rem 5rem;
+    position: relative;
+}
+
+.navbar { display: flex; justify-content: space-between; align-items: center; }
+.nav-links { list-style: none; display: flex; gap: 2rem; }
+.nav-links a { color: white; text-decoration: none; font-weight: bold; font-size: 0.9rem; }
+
+.hero-content { margin-top: 10rem; max-width: 600px; }
+.hero-content h1 { font-size: 4rem; line-height: 1.1; margin-bottom: 1rem; }
+
+/* Styling for all social links */
+.social-icons { position: absolute; bottom: 2rem; right: 5rem; font-size: 1.5rem; display: flex; gap: 1.5rem; }
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Hover colors for each platform */
+.social-icons a:hover .fa-facebook-f { color: #1877F2; transform: scale(1.2); }
+.social-icons a:hover .fa-twitter { color: #1DA1F2; transform: scale(1.2); }
+.social-icons a:hover .fa-youtube { color: #FF0000; transform: scale(1.2); }
+
+
+/* SDG Intro Section */
+.sdg-intro { 
+    display: flex; 
+    padding: 5rem; 
+    background-color: var(--light-gray); 
+    color: #333; 
+    gap: 4rem; 
+    align-items: center;
+}
+.sdg-box { 
+    background-color: var(--navy); 
+    color: white; 
+    width: 250px; 
+    height: 250px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+.sdg-number { font-size: 5rem; font-weight: bold; line-height: 1; }
+.sdg-text { font-size: 0.8rem; font-weight: bold; margin: 10px 0; }
+
+/* Stats Section */
+.stats-section {
+    background-color: var(--teal);
+    padding: 5rem;
+    text-align: center;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+.stats-title { font-size: 2.5rem; margin-bottom: 3rem; }
+.stats-container { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.circle {
+    width: 130px;
+    height: 130px;
+    border: 4px solid var(--orange);
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Cards Section */
+.focus-areas { padding: 5rem; color: var(--teal); text-align: center; }
+.cards-container { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+.card {
+    background-color: var(--orange);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: left;
+    position: relative;
+    min-height: 300px;
+}
+.card h3 { border-bottom: 2px solid rgba(255,255,255,0.3); padding-bottom: 1rem; font-size: 2rem; }
+.card-icon { position: absolute; bottom: 1rem; right: 1rem; font-size: 3rem; opacity: 0.3; }
+
+/* Footer */
+html {
+    scroll-behavior: smooth;
+}
+.footer { background-color: var(--teal); padding: 5rem; text-align: center; }
+#signup-form { max-width: 700px; margin: 2rem auto; }
+.input-group { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+input { 
+    background: transparent; 
+    border: none; 
+    border-bottom: 1px solid white; 
+    color: white; 
+    padding: 10px; 
+}
+::placeholder { color: rgba(255,255,255,0.7); }
+.submit-btn { 
+    margin-top: 2rem; 
+    background-color: var(--orange); 
+    border: none; 
+    padding: 12px 50px; 
+    color: white; 
+    font-weight: bold; 
+    border-radius: 25px; 
+    cursor: pointer;
+  
+}
+/* Styling for all social links */
+.social-icons { position: absolute; bottom: 2rem; right: 5rem; font-size: 1.5rem; display: flex; gap: 2rem; }
+.social-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
